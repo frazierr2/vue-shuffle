@@ -42,6 +42,7 @@ $(document).ready(function () {
             },
             shuffleDeck() {
                 // Example of Fisher-Yates algorithom for random order
+                // _lodash has a build in method for this too
                 for (let i = this.cards.length - 1; i > 0; i--) {
                     let randomIndex = Math.floor(Math.random() * i);
 
